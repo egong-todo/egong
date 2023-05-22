@@ -1,24 +1,13 @@
-import logo from './logo.svg';
-import './App.css';
 
+import React from 'react';
+// import Main from '../src/minju/Main.jsx';
+import Todo from './minju/Todo';
+// 추후에 기능이 고도화되면 라우팅하여 여러개의 페이지를 관리
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Todo />
+    </>
   );
 }
 
