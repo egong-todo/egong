@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Document</title>
+</head>
+<body>
+    <h2>home</h2>
+    <form action="/home" method="post">
+        <input type="text" name="content" id="content" required />
+        <button type="submit">버튼</button>
+    </form>
+    <table border="1">
+        <tr>
+            <td>id</td>
+            <td>날짜</td>
+            <td>내용</td>
+            <td>체크</td>
+        </tr>
+        <%
+        for(var i=0; i<rows.length; i++)
+        {
+            var data = rows[i];
+        %>
+        <tr>
+            <form action="home/update" method="post">
+            <td><input type="text" name="todo_id" id="todo_id" value="<%=data.todo_id%>"/></td>
+            <td><%=data.todo_date%></td>
+            <td><input type="text" name="todo_content" id="todo_content" value="<%=data.todo_content%>"/></td>
+            <td><%=data.todo_check%></td>
+            <td>
+                
+                    <input type="checkbox" name="todo_check" id="todo_check" value="0">0</input>
+                    <input type="checkbox" name="todo_check" id="todo_check" value="1">1</input>
+                    <button type="submit">제출</button>
+                </form>
+            </td>
+        </tr>
+        <%}%>
+    </table>
+    <a href="/board">게시판</a>
+</body>
+</html>
