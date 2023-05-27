@@ -2,23 +2,29 @@
   background-color: #CDF0EA;
   width:100%;
   height:100%;
+  display: flex;
+  justify-content: center;
 }
 .Todocontainer{
+  box-sizing: border-box;
   width: 704px;
   height: 634px;
   
   background-color: #F9F9F9;
   border-radius: 30px;
   padding:43px;
-  
+
+  margin: 0 auto;
+  margin-top:10px;
 }
 .Todobox {
   box-sizing: border-box;
-
   width: 769px;
   height: 814px;
   
   border: 1px solid #EC1E1E;
+  margin: 0 auto;
+  
 }
 .Headerbox {
   box-sizing: border-box;
@@ -26,6 +32,14 @@
   height: 125px;
 
   border: 1px solid #EC1E1E;
+  margin: 0 auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+}
+.Header {
+  font-size: 40px;
+  font-weight: bold;
 }
 .Listbox {
   box-sizing: border-box;
@@ -33,6 +47,7 @@
   height: 475px;
 
   border: 1px solid #EC1E1E;
+  margin: 0 auto;
 }
 .Itembox {
   box-sizing: border-box;
@@ -40,6 +55,35 @@
   height: 80px;
 
   border: 1px solid #EC1E1E;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Item {
+  box-sizing: border-box;
+  width: 602px;
+  height: 68px;
+  background-color: #F9F9F9;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+}
+.Inputtext{
+  width: 482px;
+  height: 48px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 29px;
+  color: #000000;
+  opacity: 0.5;
+}
+.Checkbox{
+  width: 52px;
+  height: 51px;
+  margin-left: 10px;
+  
+  border-radius: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.7);
 }
 .Editbox {
   box-sizing: border-box;
@@ -47,6 +91,18 @@
   height: 90px;
 
   border: 1px solid #EC1E1E;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-
+.Editbutton {
+  width: 108px;
+  height: 70px;
+  background: #F6C6EA;
+  border: 2px solid #000000;
+  box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 30px;
+  margin:6px;
+}
   
