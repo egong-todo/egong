@@ -7,6 +7,10 @@ function Todo() {
       <div className ="Todobox">
         <div className ="Headerbox">
           <p className = "Header">할 일 목록</p>
+          <div className ="GoBoardbutton">
+            <img className="GotoIcon" src="asset/Goto.png" alt="GotoIcon"/>
+            <p className ="Buttontext">게시판</p>
+          </div>
         </div>
         <div className ="Todocontainer">
           <div className ="Listbox">
@@ -18,13 +22,15 @@ function Todo() {
             <div className ="Itembox">
               <div className='Item'>
                 <div className="Checkbox">
-                  <img src="asset/CheckMark.png" alt="CheckMark"/>
+                  <img className="CheckMark" src="asset/CheckMark.png" alt="CheckMark"/>
                 </div>
               </div>
             </div>
             <div className ="Itembox">
               <div className='Item'>
-                <div className="Checkbox"></div>
+                <div className="Checkbox">
+                  <img className="CheckMark" src="asset/CheckMark.png" alt="CheckMark"/>
+                </div>
               </div>
             </div>
             <div className ="Itembox">
@@ -44,8 +50,12 @@ function Todo() {
             </div>
           </div>
           <div className ="Editbox">
-            <div className="Editbutton"></div>
-            <div className="Editbutton"></div>
+            <div className="Editbutton">
+             <p className="Buttontext">수정</p>
+            </div>
+            <div className="Editbutton">
+              <p className="Buttontext">삭제</p>
+            </div>
           </div>
         </div>
       </div>
