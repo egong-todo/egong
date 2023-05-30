@@ -37,6 +37,12 @@
   display: flex;
   justify-content: center;
 }
+.Headerbox2 {
+  box-sizing: border-box;
+  width: 500px;
+  height: 125px;
+  border: 1px solid #EC1E1E;
+}
 .Header {
   font-size: 50px;
   font-family:'PilseungGothic';
@@ -87,12 +93,26 @@
   display: flex;
   align-items: center;
 }
-.Inputtext{
+.InputItem{
+  box-sizing: border-box;
+  width: 602px;
+  height: 68px;
+  background-color: #F9F9F9;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 24px;
   font-size: 24px;
   font-family: 'NeoDunggeunmoPro-Regular';
   font-weight: bold;
   color: #000000;
-  opacity: 0.55;
+  
+}
+.input:focus {
+  animation-name: border-focus;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
 }
 .Checkbox{
   width: 52px;
