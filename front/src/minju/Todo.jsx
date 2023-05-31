@@ -39,7 +39,7 @@ function Todo() {
                 <input className="InputItem" type="text" maxLength="200" placeholder="할 일을 입력하세요." onChange={onChange} value={toDo}/>
               </form>  
             </div>
-            <div className ="Listbox">
+            <div className ="Listbox Scrolltype">
               {toDos.map((item)=>
               <div className ="Itembox">
                 <div className='Item'>
