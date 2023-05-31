@@ -36,17 +36,19 @@
   margin-top: 15px;
   display: flex;
   justify-content: center;
+  position: relative;
 }
 .Headerbox2 {
   box-sizing: border-box;
   width: 500px;
   height: 125px;
   border: 1px solid #EC1E1E;
+  position: absolute;
 }
 .Header {
   font-size: 50px;
   font-family:'PilseungGothic';
-  margin-right:61px;
+  margin-right: 61px;
 }
 .GoBoardbutton {
   box-sizing: border-box;
@@ -59,6 +61,9 @@
   margin-top: 40px;
   display: flex;
   justify-content: center;
+  position: absolute;
+  right: 75px;
+  align-items: center;
 }
 .GotoIcon{
   width: 41px;

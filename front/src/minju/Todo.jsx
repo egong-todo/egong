@@ -6,12 +6,11 @@ function Todo() {
     <div className ="TodoBack">
       <div className ="Todobox">
         <div className ="Headerbox">
-          <div className = "Headerbox2">
-            <p className = "Header">할 일 목록</p>
-            <div className ="GoBoardbutton">
-              <img className="GotoIcon" src="asset/Goto.png" alt="GotoIcon"/>
-              <p className ="Buttontext">게시판</p>
-            </div>
+
+          <p className = "Header">할 일 목록</p>
+          <div className ="GoBoardbutton">
+            <img className="GotoIcon" src="asset/Goto.png" alt="GotoIcon"/>
+            <p className ="Buttontext">게시판</p>
           </div>
         </div>
         <div className ="Todocontainer">
