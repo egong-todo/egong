@@ -9,7 +9,7 @@
   box-sizing: border-box;
   width: 704px;
   height: 634px;
-  
+
   background-color: #F9F9F9;
   border-radius: 30px;
   padding:43px;
@@ -114,7 +114,7 @@
   border-radius: 30px;
   display: flex;
   align-items: center;
-}
+}gi
 .InputItem{
   box-sizing: border-box;
   width: 602px;
