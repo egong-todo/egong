@@ -8,7 +8,7 @@ const Write = () => (
     <h1 className="main_title">게시판</h1>
     <div className="square">
       <div className="title">
-        제목{" "}
+        <div className="name">제목</div>
         <input
           type="text"
           id="title_txt"
@@ -16,30 +16,42 @@ const Write = () => (
           placeholder="제목"
           className="title_box"
         />
-        <hr className="title_hr" />
       </div>
-      <CKEditor
-        editor={ClassicEditor}
-        data="<p>Hello from CKEditor 5!</p>"
-        onReady={(editor) => {
-          // You can store the "editor" and use when it is needed.
-          console.log("Editor is ready to use!", editor);
-        }}
-        onChange={(event, editor) => {
-          const data = editor.getData();
-          console.log({ event, editor, data });
-        }}
-        onBlur={(event, editor) => {
-          console.log("Blur.", editor);
-        }}
-        onFocus={(event, editor) => {
-          console.log("Focus.", editor);
-        }}
-      />
+      <hr className="title_hr" />
+      <div className="editor_limit_box">
+        <div className="content">내용</div>
+        <div className="editor">
+          <CKEditor
+            editor={ClassicEditor}
+            data="<p>여기에 내용을 입력해주세요.</p>"
+            onReady={(editor) => {
+              // You can store the "editor" and use when it is needed.
+              console.log("Editor is ready to use!", editor);
+            }}
+            onChange={(event, editor) => {
+              const data = editor.getData();
+              console.log({ event, editor, data });
+            }}
+            onBlur={(event, editor) => {
+              console.log("Blur.", editor);
+            }}
+            onFocus={(event, editor) => {
+              console.log("Focus.", editor);
+            }}
+          />
+        </div>
+      </div>
+      <hr className="editor_hr" />
+      <div className="btnbox">
+        <div className="upload">
+          <img className="pen" src="./asset/upload.png" alt="연필" />
+          <p className="text_upload">등록</p>
+        </div>
 
-      <div className="submit_btn">
-        <button type="submit">저장</button>&nbsp;&nbsp;
-        <button type="submit">취소</button>&nbsp;&nbsp;
+        <div className="list_btn">
+          <img className="list" src="./asset/list.png" alt="리스트" />
+          <p className="text_list">목록</p>
+        </div>
       </div>
     </div>
   </div>

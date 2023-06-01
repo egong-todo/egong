@@ -1,19 +1,30 @@
-body{
+body{       /*전체 배경색*/
     background-color: #FAF4B7;
 }
-.ex_txt{
-    width: 100px;
-    height: 100px;
-}
 
-.main_title{
+@font-face {
+    font-family: 'NeoDunggeunmoPro-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'PilseungGothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/PilseungGothic.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+.main_title{         /*게시판*/
     position:absolute;
     left: 100px;
     top: 50px;
     font-size: 40px;
+    font-family: 'NeoDunggeunmoPro-Regular';
+    
 }
 
-.square{
+.square{           /* 흰색 네모 박스*/
     position: absolute;
     width: 1200px;
     height: 600px;
@@ -24,49 +35,175 @@ body{
 
 }
 
-.title{
-    position: absolute;
-    left: 80px;
-    top: 40px;
-    font-weight: bold;
-    font-size: 35px;
+.title{           /*제목 박스*/
+    display: flex;
+    margin-top: 15px;
+    align-items:center;
 }
 
-.title_box{
-    position: relative;
-    left: 300px;
-    width: 500px;
+.name{           /*제목*/
+    margin-left: 40px;
+    font-family: 'NeoDunggeunmoPro-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 24px;
+    align-items:center;
+    color: #000000;
+}
+
+.title_box{     /*제목 적는 칸*/
+    margin-left: 455px;
+    width: 550px;
     height: 25px;
+    align-items:center;
 }
 
-.title_hr{
+.title_hr{     /*제목 박스 밑줄*/
+    margin-top: 20px;
     width: 1000px;
+    height: 0px;
+    border: 1px solid #000000;
+}
+
+.ck.ck-editor__editable:not(.ck-editor__nested-editable) {    /*글쓰기 에디터*/
+    
+    min-height: 340px;
+    margin-bottom: 30px;
+}
+
+/* 툴박스 */
+.ck.ck-toolbar.ck-toolbar_grouping {      /*글쓰기 에디터*/
+    width: 791px;
+    margin-left: 225px;
+}
+
+/* 입력내용이 짧고 행이 길어지면 자동으로 텍스트입력태그 가로넓이가 줄어들기 때문에 고정 */
+.ck-editor__editable_inline {       /*글쓰기 에디터*/
+    width: 770px;
+    height: 340px;
+    margin-left: 225px;
 }
 
 .content{
-    position: relative;
-    left: 80px;
-    top: 250px;
-    font-weight: bold;
-    font-size: 35px;
+    display:flex;
+    align-items:center;
+    margin-left: 40px;
+    font-family: 'NeoDunggeunmoPro-Regular';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 25px;
+    line-height: 24px;
+
+    color: #000000;
 }
 
-.text_box{
-    position: relative;
-    left: 350px;
-    width: 600px;
-    height: 250px;
-    top: 99px;
+.editor_limit_box{  
+
+    display: flex;   /*글쓰기 에디터 박스*/
+    margin-top: 30px;
+   
+    width: 1200px;
+    height: 400px;
+    border-radius: 30px;
+    
 }
 
-.content_hr{
-    position: relative;
+.editor_hr{       /*글쓰기 에디터 밑줄*/
     width: 1000px;
-    top: 125px;
+    height: 0px;
+    border: 1px solid #000000;
 }
 
-.submit_btn{
-    position: relative;
-    left: 970px;
-    top: 200px;
+.btnbox{      /*버튼 박스*/
+   display: flex;
+   width: 1200px;
+   height: 50px;
+   margin-top: 20px;
+   justify-content: flex-end;
+ }
+
+
+.list_btn{      /*목록 버튼*/
+    box-sizing: border-box;
+    width: 86px;
+    height: 48px;
+    margin-right: 20px;
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #CDF0EA;
+    border: 2px solid #000000;
+    box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+
+   
 }
+
+.upload{       /*등록 버튼*/
+    box-sizing: border-box;
+    width: 86px;
+    height: 48px;
+    margin-right: 20px;
+    padding: 8px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: #CDF0EA;
+    border: 2px solid #000000;
+    box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.75);
+    border-radius: 30px;
+
+    
+}
+
+.pen{
+    width: 24px;
+    height: 24px;
+}
+
+.text_upload{       /*등록 글자*/
+   
+    width: 80px;
+    height: 33px;
+
+    font-family: 'NeoDunggeunmoPro-Regular';
+    font-size: 18px;
+    color: #000000;
+   
+
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    
+    
+}
+
+.list{
+    width: 24px;
+    height: 24px;
+}
+
+.text_list{       /*목록 글자*/
+   
+    width: 80px;
+    height: 33px;
+   
+    font-family: 'NeoDunggeunmoPro-Regular';
+    font-size: 18px;
+    color: #000000;
+   
+
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+
+   
+   
+}
+
