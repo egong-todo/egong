@@ -1,0 +1,174 @@
+.Readback {
+
+    width: 100%;
+    height: 100%;
+    background-color: #FAF4B7;
+    display: block;
+    justify-content: center;
+  }
+.ReadContainer {
+    width: 1654px;
+    height: 855px;
+    background-color: #F9F9F9;
+    border-radius: 30px;
+    box-sizing: border-box;
+    padding:32px;
+  }
+
+  .UserName{
+    font-size: 50px;
+    color: #000000;
+  }
+  .Usericon{
+    width: 25px;
+    height: 25px;
+  }
+
+.boardbox1{
+  width: 1685px;
+  height: 89px;
+  margin-top:50px;
+  box-sizing: border-box;
+  border: 1px solid #547AFF;
+  display: flex;
+  justify-content: center;
+}
+.boardbox2{
+  width: 1685px;
+  height: 883px;
+  box-sizing: border-box;
+  border: 1px solid #547AFF;
+  display:flex;
+  align-items: flex-end;
+  }
+.postbox{
+  width: 1525px;
+  box-sizing: border-box;
+  height: 411px;
+  border: 1px solid #547AFF;
+}
+.titlebox{
+  width: 1491px;
+  height: 59px;
+  box-sizing: border-box;
+  border: 1px solid #547AFF;
+}
+.userbox{
+  width: 1491px;
+  height: 63px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  justify-content:flex-start;
+  border: 1px solid #D832E7;
+}
+.readbox{
+  width: 1491px;
+  height: 227px;
+  box-sizing: border-box;
+  border: 1px solid #547AFF;
+}
+.detailbox{
+  width: 1459px;
+  height: 136px;
+  box-sizing: border-box;
+  border: 1px solid #547AFF;
+}
+.buttonbox{
+  width: 1459px;
+  height: 78px;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  justify-content: flex-start;
+  border: 1px solid #547AFF;
+}
+.commentbox{
+  width: 1525px;
+  height: 269px;
+  box-sizing: border-box;
+  border: 1px solid #547AFF;
+}
+.datebox{
+  display: flex;
+  justify-content: flex-start;
+  width: 1459px;
+  height: 24px;
+  box-sizing: border-box;
+  border: 1px solid #000000;}
+.time{
+  width: 20px;
+  height: 20px;
+}
+.writebox{
+  box-sizing: border-box;
+  width: 1459px;
+  height: 97px;
+  border: 1px solid #000000;
+}
+.header{
+  font-family:'PilseungGothic';
+  font-size: 40px;
+  box-sizing: border-box;
+  color: #000000;
+}
+.title{
+  font-family: 'NeoDunggeunmoPro-Regular';
+  box-sizing: border-box;
+  font-weight:bold;
+  font-size: 40px;
+  color: #000000;
+}
+.username{
+  font-size: 30px;
+  font-weight:bold;
+  box-sizing: border-box;
+  font-family: 'NeoDunggeunmoPro-Regular';
+  color: #000000;
+}
+.uploaddate{
+  font-size: 20px;
+  font-family: 'NeoDunggeunmoPro-Regular';
+  color: rgba(0, 0, 0, 0.7);
+}
+.write{
+  font-size: 24px;
+  box-sizing: border-box;
+  font-family: 'NeoDunggeunmoPro-Regular';
+  color: #000000;
+}
+.buttontext{
+  font-family: 'NeoDunggeunmoPro-Regular';
+  box-sizing: border-box;
+  font-size: 20px;
+  color: #000000;
+}
+.button{
+  box-sizing: border-box;
+  width: 86px;
+  height: 48px;
+  background: #CDF0EA;
+  border: 2px solid #000000;
+  box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 30px;
+  padding:1px;
+  margin-right:9px;
+  display:flex;
+  justify-content:center;
+}
+.icon{
+  width:24px;
+  height:24px;
+}
+@font-face {
+  font-family: 'NeoDunggeunmoPro-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PilseungGothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/PilseungGothic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
