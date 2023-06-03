@@ -1,5 +1,6 @@
 import React from 'react';
 import './Todo.css';
+import './Todobutton.jsx';
 import {useState} from 'react';
 
 function Todo() {
@@ -22,15 +23,15 @@ function Todo() {
     }
   }
   return (
-    <div className ="TodoBack">
+    <div className ="Todobody">
       <div className ="Todobox">
         <div className ="Headerbox">
 
           <p className = "Header">할 일 목록</p>
-          <div className ="GoBoardbutton">
+          <GoBoardbutton>
             <img className="GotoIcon" src="asset/Goto.png" alt="GotoIcon"/>
             <p className ="Buttontext">게시판</p>
-          </div>
+          </GoBoardbutton>
         </div>
         <div className ="Todocontainer">
           <div className ="ListTemplatebox">
@@ -52,12 +53,12 @@ function Todo() {
             </div>  
           </div>
           <div className ="Editbox">
-            <div className="Editbutton">
+            <Editbutton>
              <p className="Buttontext">수정</p>
-            </div>
-            <div className="Editbutton">
+            </Editbutton>
+            <Editbutton>
               <p className="Buttontext">삭제</p>
-            </div>
+            </Editbutton>
           </div>
         </div>
       </div>
