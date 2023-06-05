@@ -54,6 +54,7 @@ router.post('/update',function(req, res)
 router.use((err, req, res, next) => {
     console.log(err);
     console.log("오류다");
+    console.log("커맷");
     res.send(err);
 })
 
