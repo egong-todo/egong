@@ -10,7 +10,6 @@ module.exports = () => {
       {
         usernameField: "email",
         passwordField: "password",
-        passReqToCallback: false,
       },
       async (email, password, done) => {
         try {
