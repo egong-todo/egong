@@ -1,13 +1,13 @@
-import React from 'react';
-import './Todo.css';
+import React from "react";
+import "./Todo.css";
 import styled from "styled-components";
-import { darken, lighten } from 'polished';
+import { darken, lighten } from "polished";
 
-const GoBoardbutton = styled.button`
+export const GoBoardbutton = styled.button`
   box-sizing: border-box;
   width: 160px;
   height: 70px;
-  background: #F6C6EA;
+  background: #f6c6ea;
   border: 3px solid #000000;
   box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.75);
   border-radius: 30px;
@@ -19,14 +19,14 @@ const GoBoardbutton = styled.button`
   align-items: center;
 `;
 
-const Editbutton = styled.button`
+export const Editbutton = styled.button`
   width: 108px;
   height: 70px;
-  background: #F6C6EA;
+  background: #f6c6ea;
   border: 3px solid #000000;
   box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.75);
   border-radius: 30px;
-  margin:6px;
+  margin: 6px;
   display: flex;
   justify-content: center;
   align-items: center;
