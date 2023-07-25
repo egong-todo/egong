@@ -1,0 +1,195 @@
+.Todobody {
+  background-color: #CDF0EA;
+  width:100%;
+  height:100%;
+  display: flex;
+  justify-content: center;
+}
+.Todocontainer{
+  box-sizing: border-box;
+  width: 704px;
+  height: 634px;
+
+  background-color: #F9F9F9;
+  border-radius: 30px;
+  padding:43px;
+
+  margin: 0 auto;
+  margin-top:10px;
+}
+.Todobox {
+  box-sizing: border-box;
+  width: 769px;
+  height: 814px;
+  
+  border: 1px solid #EC1E1E;
+  margin: 0 auto;
+}
+.Headerbox {
+  box-sizing: border-box;
+  width: 738px;
+  height: 125px;
+
+  border: 1px solid #EC1E1E;
+  margin: 0 auto;
+  margin-top: 15px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.Header {
+  font-size: 50px;
+  font-family:'PilseungGothic';
+  margin-right: 61px;
+  position: absolute;
+}
+/* .GoBoardbutton {
+  box-sizing: border-box;
+  width: 160px;
+  height: 70px;
+  background: #F6C6EA;
+  border: 3px solid #000000;
+  box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 30px;
+  margin-top: 40px;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 75px;
+  align-items: center;
+} */
+.GotoIcon{
+  width: 41px;
+  height: 48px;
+}
+.ListTemplatebox {
+  box-sizing: border-box;
+  width: 608px;
+  height: 480px;
+
+  border: 1px solid #EC1E1E;
+  margin: 0 auto;
+}
+.Listbox {
+  box-sizing: border-box;
+  width: 608px;
+  height: 397px;
+  border: 1px solid #EC1E1E;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+/* 스크롤바 설정*/
+.Scrolltype::-webkit-scrollbar{
+  width: 8px;
+}
+/* 스크롤바 막대 설정*/
+.Scrolltype::-webkit-scrollbar-thumb{
+  height: 17%;
+  background-color: #7c7c7c;
+  /* 스크롤바 둥글게 설정 */
+  border-radius: 10px;    
+}
+/* 스크롤바 뒷 배경 설정*/
+.Scrolltype::-webkit-scrollbar-track{
+  background-color: rgba(0,0,0,0);
+}
+.Itembox {
+  box-sizing: border-box;
+  width: 608px;
+  height: 80px;
+
+  border: 1px solid #EC1E1E;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.Item {
+  box-sizing: border-box;
+  width: 602px;
+  height: 68px;
+  background-color: #F9F9F9;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+}
+.InputItem{
+  box-sizing: border-box;
+  width: 602px;
+  height: 68px;
+  background-color: #F9F9F9;
+  border: 2px solid rgba(0, 0, 0, 0.5);
+  border-radius: 30px;
+  display: flex;
+  align-items: center;
+  padding: 24px;
+  font-size: 24px;
+  font-family: 'NeoDunggeunmoPro-Regular';
+  font-weight: bold;
+  color: #000000;
+  
+}
+.input:focus {
+  animation-name: border-focus;
+  animation-duration: 1s;
+  animation-fill-mode: forwards;
+}
+.Checkbox{
+  box-sizing: border-box;
+  width: 52px;
+  height: 51px;
+  margin: 7px;
+  margin-right: 15px;
+
+  border-radius: 30px;
+  border: 2px solid rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.CheckMark{
+  width: 51.25px;
+  height: 48.34px;
+}
+.Editbox {
+  box-sizing: border-box;
+  width: 269px;
+  height: 90px;
+
+  border: 1px solid #EC1E1E;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .Editbutton {
+  width: 108px;
+  height: 70px;
+  background: #F6C6EA;
+  border: 3px solid #000000;
+  box-shadow: 2px 4px 0px rgba(0, 0, 0, 0.75);
+  border-radius: 30px;
+  margin:6px;
+  display: flex;
+  justify-content: center;
+} */
+.Buttontext {
+  font-size: 24px;
+  font-family: 'NeoDunggeunmoPro-Regular';
+  font-weight: bold;
+  color: #000000;
+}
+
+@font-face {
+  font-family: 'NeoDunggeunmoPro-Regular';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/NeoDunggeunmoPro-Regular.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'PilseungGothic';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/PilseungGothic.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
