@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+<a href="/board/write">글쓰기</a>
+
+<table border="1">
+    <tr>
+        <td>번호</td>
+        <td>제목</td>
+        <td>내용</td>
+        <td>등록일</td>
+        <td>사용자</td>
+    </tr>
+    <%
+    for(var i = (page * page_num) - page_num; i < (page * page_num); i++) {
+    if(i > length){
+        i++;
+    }else{
+        var data = rows[i]
+    %>
+    <tr>
+        <td><%= i + 1 %></td>
+        <td><%= data.post_title %></td>
+        <td><a href="/board/read/<%= data.post_id %>"><%= data.post_content %></a></td>
+        <td><%= data.post_date %></td>
+        <td><%= data.post_user %></td>
+    </tr>
+    <% }
+    }
+    %>
+    <tr>
+        <td colspan="6">
+            <%
+            for(var j = 0; j < rows.length / page_num; j++){
+            %>
+            [<a href="/board/<%= j + 1 %>"><%= j + 1 %></a>]
+            <%
+            }
+            %>
+        </td>
+    </tr>
+</table>
+</body>
+</html>

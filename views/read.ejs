@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+
+<body>
+
+<form action="/board/update" method="post">
+    <table border="1">
+        <input type="hidden" name="id" value="<%=row.id%>"/>
+        <tr>
+            <td>작성자</td>
+            <td><input type="text" name="post_user" id="post_user" value="<%=row.post_user%>" required/></td>
+        </tr>
+        <tr>
+            <td>제목</td>
+            <td><input type="text" name="post_title" id="post_title" value="<%=row.post_title%>" required/></td>
+        </tr>
+        <tr>
+            <td>내용</td>
+            <td><textarea name="post_content" id="post_content" cols="30" rows="10" required><%=row.post_content%></textarea></td>
+        </tr>
+        <tr>
+            <td>등록일</td>
+            <td><%=row.post_date%></td>
+        </tr>
+
+        <tr>
+            <td colspan="2">
+                <!-- <button type="submit">글 수정</button> -->
+                <button type="submit" onclick="javascript: form.action='/board/update';">글 수정</button>
+
+                <a href="/board/1">목록</a>
+                <!-- <button type="submit" onClick="del(this.form);">글 삭제</button> -->
+                <button type="submit" onclick="javascript: form.action='/board/delete';">글 삭제</button>
+            </td>
+        </tr>
+    </table>
+</form>
+ 
+</body>
+</html>
